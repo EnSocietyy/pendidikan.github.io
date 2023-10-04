@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pendidikan</title>
+	<style>
+		/*                                Logo Header                                 */
+		header{
+			background-color: rgb(100, 100, 100);
+			padding: 0;
+			display: flex;
+			
+			align-items: center;
+		}
+		.logo h1{
+			justify-content: center;
+			color: #000;
+			margin-left: 10px;
+			font-size: larger;
+			font-family:Arial, Helvetica, sans-serif ;
+		}
+		/*                                  Navigasi                                   */
+		nav {
+			background-color: #555;
+			color: #fff;
+			padding: 10px;
+		}
+		nav ul {
+			list-style-type: none;
+			margin:0;
+			padding:0;
+			overflow: hidden;
+			background-color: #333;
+			width: 100%
+		}
+		nav ul li {
+			float: left;
+		}
+		nav ul li:last-child{
+			border-right: 1px solid #bbb;
+			float: right;
+		}
+		nav ul li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		nav ul li a:hover {
+			background-color: white;
+			color: black;
+		}
+		/*     gambar      */
+		.gambar img{
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			max-width: 100%;
+		}
+		
+	/*        Artikel        */
+		.container {
+			display: flex;
+			margin: 0 auto;
+		}
+
+		.kolom-kiri {
+			padding: 20px;
+			float: left;
+		}
+		.kolom-kiri p{
+			color: rgb(0, 0, 0);
+			font-size: 20px;
+		}
+
+		.kolom-kanan {
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		.kolom-kanan img{
+			width: 400px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="index1.html"><h1>Politeknik Harapan Bersama</h1></a>
+		</div>
+	</header>
+<!-----------------------NAVIGASI----------------------------------->
+		<nav>
+			<ul>
+				<li><a href="index1.html">Beranda</a></li>
+				<li><a href="https://poltekharber.ac.id/berita" target="_blank">Berita</a></li>
+				<li><a href="https://poltekharber.ac.id/profil-pimpinan" target="_blank">Profil</a></li>
+				<li><a href="https://poltekharber.ac.id/galeri" target="_blank">Gallery</a></li>
+				<li><a href="https://poltekharber.ac.id/kontak" target="_blank">Kontak Kami</a></li>
+				<li><a href="https://poltekharber.ac.id/sejarah-politeknik-harapan-bersama" target="_blank">Tentang Kami</a></li>
+				<li><a href="https://syncdaftar.poltektegal.ac.id/" target="_blank">Informasi Pendaftaran</a></li>
+			</ul>
+		</nav>
+<!----------------------------BACKGROUND GAMBAR----------------->
+
+		<div class="gambar">
+			<img src="https://poltekharber.ac.id/files/bread/eb34e512bd760ac93e5c228911e6ba5d.png" alt="">
+		</div>
+<!---------------------------ARTIKEL------------------------------->
+		<div class="container">
+			<div class="kolom-kiri">
+				<p>Politeknik Harapan Bersama (PHB) merupakan perguruan tinggi vokasional yang program pendidikannya berdasar pada 70% praktek dan 30% teori dengan target lulusan memiliki kemampuan teknis yang baik sehingga menjadi tenaga ahli yang mandiri dan profesional sesuai bidangnya. Sebagai salah satu perguruan tinggi swasta terbesar se-Jawa Tengah dan mendapat peringkat ke 29 Nasional dari 1.128 perguruan tinggi se-Indonesia, saat ini PHB memiliki lebih dari 5000 mahasiswa dengan 10 Program Studi Inovatif & Unggulan juga program kelas internasional.
+					Program unggulan kelas internasional atau International Class Program (ICP) ini merupakan kerjasama antara Politeknik Harapan Bersama - Indonesia dengan MSU (Management & Science University) - Malaysia dengan Fast Track & Double Degree Program yakni percepatan kuliah sampai S-2 hanya 5 tahun.
+					</p>
+			</div>
+			<div class="kolom-kanan">
+			<img src="https://irfantipoltekharber.files.wordpress.com/2016/10/gedung-poltek-tegal-2.jpg">
+			</div>
+		</div>
+</body>
+</html>
