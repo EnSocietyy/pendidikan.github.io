@@ -6,86 +6,49 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>pendidikan</title>
 	<style>
+		html{overflow-y:scroll;}
+
 		/*                                Logo Header                                 */
-		header{
-			background-color: rgb(100, 100, 100);
-			padding: 0;
-			display: flex;
-			
-			align-items: center;
-		}
-		.logo h1{
-			justify-content: center;
-			color: #000;
-			margin-left: 10px;
-			font-size: larger;
-			font-family:Arial, Helvetica, sans-serif ;
-		}
+		header{background-color:#48282F; padding: 0; display: flex; align-items: center;}
+		.logo h1{justify-content: center; color: #000; margin-left: 10px; font-size: larger; font-family:Arial, Helvetica, sans-serif ;}
+
 		/*                                  Navigasi                                   */
-		nav {
-			background-color: #555;
-			color: #fff;
-			padding: 10px;
-		}
-		nav ul {
-			list-style-type: none;
-			margin:0;
-			padding:0;
-			overflow: hidden;
-			background-color: #333;
-			width: 100%
-		}
-		nav ul li {
-			float: left;
-		}
-		nav ul li:last-child{
-			border-right: 1px solid #bbb;
-			float: right;
-		}
-		nav ul li a {
-			display: block;
-			color: white;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-		}
-		nav ul li a:hover {
-			background-color: white;
-			color: black;
-		}
-		/*     gambar      */
-		.gambar img{
-			display: flex;
-			flex-direction: column;
-			position: relative;
-			max-width: 100%;
-		}
+		nav {background-color: #555; color: #fff; padding: 5px;}
+		nav ul {list-style-type: none; margin:0; padding:0; overflow: hidden; background-color: #48282F; width: 100%}
+		nav ul li {float: left;}
+		nav ul li:last-child{border-right: 1px solid #bbb; float: right;}
+		nav ul li a {display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;}
+		nav ul li a:hover {background-color: white; color: black;}
+
+		/* -----------------------------------AREA----------------------------------------------------*/
 		
-	/*        Artikel        */
-		.container {
-			display: flex;
-			margin: 0 auto;
-		}
+		.konten h1{text-align:left; font-size:20px; font-weight:normal; line-height:normal; font-family:Georgia, "Times New Roman", Times, serif;}
+		#isi{display:block; align-items: center; position:relative; width:960px; margin:0 auto;}
 
-		.kolom-kiri {
-			padding: 20px;
-			float: left;
-		}
-		.kolom-kiri p{
-			color: rgb(0, 0, 0);
-			font-size: 20px;
-		}
+		/* -----------------------------------GAMBAR--------------------------------------------------*/
+		img{display:block; margin:0; padding:0; border:none;}
+		.imgleft, .imgright{border:1px solid #999999; padding:5px;}
+		.imgleft{margin:0 8px 8px 0; clear:left;}
+		.imgright{margin:0 0 8px 8px; clear:right;}
+		.imgleft{float:left;}
+		.imgright{float:right;}
 
-		.kolom-kanan {
-			padding: 20px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-		}
-		.kolom-kanan img{
-			width: 400px;
-		}
+
+		/* -----------------------------------------TABEL---------------------------------------------*/
+		h2{text-align: center;}
+		table{width:100%; border-collapse:collapse; table-layout:auto; vertical-align:top; margin-bottom:15px; border:1px solid #CCCCCC;}
+		table thead th{color:#FFFFFF; background-color:#645951; border:1px solid #CCCCCC; border-collapse:collapse; text-align:center; table-layout:auto; vertical-align:middle;}
+		table tbody td{vertical-align:top; border-collapse:collapse; border-left:1px solid #CCCCCC; border-right:1px solid #CCCCCC;}
+		table thead th, table tbody td{padding:5px; border-collapse:collapse;}
+		table tbody tr.A{color:#666666; background-color:#FDFFE1;}
+		table tbody tr.B{color:#666666; background-color:#FBFFC4;}
+
+		/* -----------------------------------------FORM--------------------------------------------- */
+		#container #form{display:block; width:100%;}
+		#container #form input{width:170px; padding:2px; border:1px solid #CCCCCC; margin:5px 5px 0 0;}
+		#container #form textarea{width:98%; border:1px solid #CCCCCC; padding:2px; overflow:auto;}
+		#container #form p{margin:5px 0;}
+		#container #form #submit, #container #respond #reset{margin:0; padding:5px; color:#666666; background-color:#F7F7F7; border:1px solid #CCCCCC; cursor:pointer;}
 	</style>
 </head>
 <body>
@@ -106,21 +69,95 @@
 				<li><a href="https://syncdaftar.poltektegal.ac.id/" target="_blank">Informasi Pendaftaran</a></li>
 			</ul>
 		</nav>
-<!----------------------------BACKGROUND GAMBAR----------------->
 
-		<div class="gambar">
-			<img src="https://poltekharber.ac.id/files/bread/eb34e512bd760ac93e5c228911e6ba5d.png" alt="">
-		</div>
-<!---------------------------ARTIKEL------------------------------->
-		<div class="container">
-			<div class="kolom-kiri">
-				<p>Politeknik Harapan Bersama (PHB) merupakan perguruan tinggi vokasional yang program pendidikannya berdasar pada 70% praktek dan 30% teori dengan target lulusan memiliki kemampuan teknis yang baik sehingga menjadi tenaga ahli yang mandiri dan profesional sesuai bidangnya. Sebagai salah satu perguruan tinggi swasta terbesar se-Jawa Tengah dan mendapat peringkat ke 29 Nasional dari 1.128 perguruan tinggi se-Indonesia, saat ini PHB memiliki lebih dari 5000 mahasiswa dengan 10 Program Studi Inovatif & Unggulan juga program kelas internasional.
-					Program unggulan kelas internasional atau International Class Program (ICP) ini merupakan kerjasama antara Politeknik Harapan Bersama - Indonesia dengan MSU (Management & Science University) - Malaysia dengan Fast Track & Double Degree Program yakni percepatan kuliah sampai S-2 hanya 5 tahun.
+		<div class="konten">
+			<div id="isi">
+				<h1>Politeknik Harapan Bersama Tegal</h1>
+				<img class="imgright" src="https://poltektegal.ac.id/files/gedung/gedung_b.jpg" alt="" width="125" height="125" />
+				<p>Politeknik Harapan Bersama (PHB) merupakan perguruan tinggi vokasional yang program pendidikannya berdasar pada 70% praktek dan 30% teori dengan target lulusan memiliki kemampuan teknis yang baik sehingga menjadi tenaga ahli yang mandiri dan profesional sesuai bidangnya.</p>
+				<p>Sebagai salah satu perguruan tinggi swasta terbesar se-Jawa Tengah dan mendapat peringkat ke 29 Nasional dari 1.128 perguruan tinggi se-Indonesia, saat ini PHB memiliki lebih dari 5000 mahasiswa dengan 10 Program Studi Inovatif & Unggulan juga program kelas internasional.</p>
+				<img class="imgleft" src="https://irfantipoltekharber.files.wordpress.com/2016/10/gedung-poltek-tegal-2.jpg" alt="" width="125" height="125" />
+				<p>Program unggulan kelas internasional atau International Class Program (ICP) ini merupakan kerjasama antara Politeknik Harapan Bersama - Indonesia dengan MSU (Management & Science University) - Malaysia dengan Fast Track & Double Degree Program yakni percepatan kuliah sampai S-2 hanya 5 tahun.</p>
+				<p>Menjadi Politeknik Unggul,  Berjiwa Kewirausahaan, Berbasis Kearifan Lokal yang Berdaya Saing Global Tahun 2035.</p>
+				<br>
+				<h2>Akreditasi Program Studi</h2>
+				<table summary="Summary Here" cellpadding="0" cellspacing="0">
+				  <thead>
+					<tr>
+					  <th>Program Studi</th>
+					  <th>Akreditasi</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr class="A">
+					  <td>Sarjana Terapan Teknik Informatika</td>
+					  <td>Baik</td>
+					</tr>
+					<tr class="B">
+					  <td>Sarjana Terapan Akuntansi Sektor Publik</td>
+					  <td>Baik</td>
+					</tr>
+					<tr class="A">
+					  <td>D3 Teknik Elektro</td>
+					  <td>Baik</td>
+					</tr>
+					<tr class="B">
+					  <td>D3 Teknik Mesin</td>
+					  <td>Baik sekali</td>
+					</tr>
+					<tr class="A">
+						<td>D3 Teknik Komputer</td>
+						<td>Baik sekali</td>
+					  </tr>
+					  <tr class="B">
+						<td>D3 Akuntansi</td>
+						<td>Baik</td>
+					  </tr>
+					  <tr class="A">
+						<td>D3 Kebidanan</td>
+						<td>Baik sekali</td>
+					  </tr>
+					  <tr class="B">
+						<td>D3 Farmasi</td>
+						<td>Baik sekali</td>
+					  </tr>
+					  <tr class="A">
+						<td>D3 Perhotelan</td>
+						<td>Baik</td>
+					  </tr>
+					  <tr class="B">
+						<td>D3 Desain Komunikasi Visuali</td>
+						<td>Baik</td>
+					  </tr>
+					  <tr class="A">
+						<td>D3 Keperawatan</td>
+						<td>Surat Keputusan</td>
+					  </tr>
+				  </tbody>
+				</table>
+				<h2>Kritik & Saran</h2>
+				<div id="form">
+				  <form action="#" method="post">
+					<p>
+					  <input type="text" name="name" id="name" value="" size="22" />
+					  <label for="name"><small>Nama (wajib)</small></label>
 					</p>
+					<p>
+					  <input type="text" name="email" id="email" value="" size="22" />
+					  <label for="email"><small>Email (wajib)</small></label>
+					</p>
+					<p>
+					  <textarea name="comment" id="comment" cols="100%" rows="10"></textarea>
+					  <label for="comment" style="display:none;"><small>Comment (wajib)</small></label>
+					</p>
+					<p>
+					  <input name="submit" type="submit" id="submit" value="Submit" />
+					  &nbsp;
+					  <input name="reset" type="reset" id="reset" tabindex="5" value="Reset" />
+					</p>
+				  </form>
+				</div>
+			  </div>
 			</div>
-			<div class="kolom-kanan">
-			<img src="https://irfantipoltekharber.files.wordpress.com/2016/10/gedung-poltek-tegal-2.jpg">
-			</div>
-		</div>
 </body>
 </html>
